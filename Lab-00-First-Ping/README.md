@@ -35,6 +35,10 @@ C:\> ping 192.168.1.11
 
 ✅ **Result:** PC1 replied. The first request can time out while ARP resolves the MAC address; after that every ping succeeds.
 
+## ▶️ Try it yourself
+
+Download [`Lab0_First_Ping.pkt`](./Lab0_First_Ping.pkt), open it in Cisco Packet Tracer, then go to **PC0 → Desktop → Command Prompt** and run `ping 192.168.1.11`.
+
 ## 📸 Evidence
 
 ![Lab 00 topology and successful ping in Packet Tracer](lab0-topology.png)
@@ -63,6 +67,7 @@ I changed PC1's IP to `192.168.2.11` and pinged again. **It failed**, because th
 | `Destination host unreachable` | The PCs are on different networks; make the first three octets match |
 
 ## 📁 Files
+- [`Lab0_First_Ping.pkt`](./Lab0_First_Ping.pkt): **the Packet Tracer project**. Download it and open it in Cisco Packet Tracer 9.0 to see the network and run the ping yourself
 - [`Lab0_First_Ping.docx`](./Lab0_First_Ping.docx): the full lab write-up
 - [`lab0-topology.png`](./lab0-topology.png): screenshot of the topology and the successful ping
 - [`lab0-ping.png`](./lab0-ping.png): PC0 Command Prompt showing 4/4 ping replies
