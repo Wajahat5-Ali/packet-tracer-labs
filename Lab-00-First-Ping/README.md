@@ -35,6 +35,12 @@ C:\> ping 192.168.1.11
 
 ✅ **Result:** PC1 replied. The first request can time out while ARP resolves the MAC address; after that every ping succeeds.
 
+## 📸 Evidence
+
+![Lab 00 topology and successful ping in Packet Tracer](lab0-topology.png)
+
+Screenshot from Cisco Packet Tracer (Simulation mode): every link light is green, and the PDU list at the bottom right shows an ICMP ping from **PC0 → PC1** with status **Successful**. I also added a third PC (PC2) to the switch while experimenting.
+
 ## 🧪 Breaking it on purpose
 I changed PC1's IP to `192.168.2.11` and pinged again. **It failed**, because the PCs were now on different networks (`192.168.1.0/24` vs `192.168.2.0/24`). A switch can't connect two different networks; that needs a **router**, which is the next lab.
 
@@ -54,6 +60,7 @@ I changed PC1's IP to `192.168.2.11` and pinged again. **It failed**, because th
 
 ## 📁 Files
 - [`Lab0_First_Ping.docx`](./Lab0_First_Ping.docx): the full lab write-up
+- [`lab0-topology.png`](./lab0-topology.png): screenshot of the topology and the successful ping
 
 ## ⏭️ Next
 - **Lab 01:** add a router and connect two networks
